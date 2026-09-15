@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #020617;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 { color: #38bdf8; }
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+nav a:hover { color: #38bdf8; }
+
+.inicio {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+}
+
+.inicio div { max-width: 750px; }
+
+.destaque { color: #38bdf8; font-size: 18px; }
+
+.inicio h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.inicio h2 {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.inicio p { margin-bottom: 30px; }
+
+.botao {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #020617;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.secao { padding: 80px 10%; }
+
+.secao > h2 {
+    color: #38bdf8;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.secao > p {
+    max-width: 800px;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card, .projeto {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card h3, .projeto h3 {
+    margin-bottom: 10px;
+    color: #f8fafc;
+}
+
+.card p, .projeto p { color: #94a3b8; }
+
+.projeto { margin-bottom: 20px; }
+
+.projeto span {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 8px;
+    padding: 5px 10px;
+    background-color: #334155;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contato { text-align: center; }
+
+.contato p { margin: 5px auto; }
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #020617;
+    color: #94a3b8;
+}
+
+@media (max-width: 700px) {
+    nav { flex-direction: column; gap: 15px; }
+    nav ul { flex-wrap: wrap; justify-content: center; }
+    .inicio h1 { font-size: 40px; }
+    .cards { grid-template-columns: 1fr; }
+    .secao, .inicio { padding: 60px 7%; }
+}
